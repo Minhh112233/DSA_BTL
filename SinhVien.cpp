@@ -14,21 +14,16 @@ private:
     string lop;
 
 public:
-    // Getter và Setter cho các thành viên dữ liệu
+    // Getter  cho các thành viên dữ liệu
     string getId() const { return id; }
-    void setId(const string& id) { this->id = id; }
-
+    
     string getTen() const { return ten; }
-    void setTen(const string& ten) { this->ten = ten; }
-
+    
     string getNs() const { return ns; }
-    void setNs(const string& ns) { this->ns = ns; }
-
+    
     string getGioitinh() const { return gioitinh; }
-    void setGioitinh(const string& gioitinh) { this->gioitinh = gioitinh; }
 
     string getLop() const { return lop; }
-    void setLop(const string& lop) { this->lop = lop; }
 
     // Ham nhap thong tin sinh vien
     friend istream& operator>>(istream& is, SinhVien& a) {
